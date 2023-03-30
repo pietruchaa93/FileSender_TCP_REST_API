@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main">
+    
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:id="@+id/bluetooth_content"
+		android:layout_below="@id/toolbar"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:background="#ffffffff">
+
+		<Button
+			android:id="@+id/button_connect_TCP"
+			android:background="?attr/colorPrimary"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:paddingLeft="12dp"
+			android:paddingRight="12dp"
+			android:paddingTop="16dp"
+			android:paddingBottom="16dp"
+			android:layout_marginTop="12dp"
+			android:layout_marginRight="12dp"
+			android:layout_marginLeft="12dp"
+			android:layout_marginBottom="16dp"
+			android:text="@string/connect_TCP"
+			android:textStyle="bold"
+			android:textSize="28dp" />
+	<Button
+			android:id="@+id/button_connect_REST_API"
+			android:background="?attr/colorPrimary"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:paddingLeft="12dp"
+			android:paddingRight="12dp"
+			android:paddingTop="16dp"
+			android:paddingBottom="16dp"
+			android:layout_marginTop="12dp"
+			android:layout_marginRight="12dp"
+			android:layout_marginLeft="12dp"
+			android:layout_marginBottom="16dp"
+			android:text="@string/connect_REST_API"
+			android:textStyle="bold"
+			android:textSize="28dp" />
+
+	</LinearLayout>
+
+</RelativeLayout>
